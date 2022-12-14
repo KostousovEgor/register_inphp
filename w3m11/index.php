@@ -32,6 +32,8 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
 }
 if ($result)
     $smsg = "Регистрация прошла успешно";
+    else if ($result)
+        $fsmsg = "Ошибка";
 if(isset($smsg)){ 
     echo '<div class="alert alert-success" role="alert">'.$smsg.'</div>';
 }
